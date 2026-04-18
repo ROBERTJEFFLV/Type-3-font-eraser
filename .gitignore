@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Generated outputs
+output.pdf
+
+# Local samples and test artifacts
+input_pdf/
+tmp_test/
