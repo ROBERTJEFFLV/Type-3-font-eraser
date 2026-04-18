@@ -1,0 +1,21 @@
+# 可在此文件中调整脚本渲染与字体参数，无需修改源码
+font_family: "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"  # 使用可嵌入的 TTF 字体，减少 Type 3 回退；也可改为其他内置字体名或 TTF/OTF 路径
+font_size: null                    # null=沿用原字号；也可填写固定字号（pt）
+fill_color: "#333333"              # 重绘文字颜色（RGB 或十六进制）
+dpi: 300                           # 渲染像素分辨率（DPI）
+merge_threshold_pt: 1.5            # span 合并阈值（点）
+background_sample_ring: 3          # 采样环宽度（像素），避免文字本身干扰
+background_histogram_step: 8       # 背景主色直方图的量化步长（像素值）
+foreground_tolerance: 24           # 视为“非背景像素”的颜色距离阈值
+tight_box_padding_px: 0            # 紧致涂抹框额外外扩像素
+char_box_margin_px: 1              # 字符 bbox 转像素后额外放宽的边距
+thin_component_thickness_px: 1     # 识别细线/框线时的最大厚度
+thin_component_span_ratio: 0.1     # 细线/框线至少跨越原 bbox 的比例
+min_foreground_component_px: 4     # 忽略极小噪点的最小连通域面积
+line_boundary_search_px: 40        # 在文字周边搜索框线/边线的像素范围
+line_boundary_margin_px: 0         # 涂抹框与检测到的框线之间保留的额外间距
+char_probe_shrink_ratio: 0.25      # 用于字符/框线判定的字符探针收缩比例，越大越不容易误吸框线
+page_line_axis_tolerance_pt: 0.25  # 整页矢量线检测时，允许视作水平/垂直线的轴向误差（pt）
+page_line_merge_tolerance_pt: 1.0  # 整页矢量线去重/合并时的容差（pt）
+page_line_min_span_pt: 8           # 参与整页框线检测的最短线段长度（pt）
+page_line_safety_px: 1             # 使用整页矢量边界裁剪时额外保留的安全像素
